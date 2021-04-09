@@ -2,13 +2,23 @@
 To use this module, you must have python3 and several libraries that are used for image conversion (see requirements.txt)
 
 ## Prerequisites
-Make sure you have either Python3 installed on your computer. The easiest way to determine this is by running 'python3 --version'. If you get a response similar to
+Make sure you have Python3 and pip installed on your computer. The easiest way to determine this is by running 'python3 --version' and 'pip --version'. If you get a response similar to
 
 Python 3.7.10
+
+pip 21.0.1 from /Users/rockstardotb/lib/python3.7/site-packages/pip (python 3.7)
 
 then you are all set. Otherwise, download python3 using the following link:
 
 https://www.python.org/downloads/
+
+and/or pip using the following link:
+
+https://pip.pypa.io/en/stable/installing/
+
+Note, if you are using a Windows machine, you also need to download git if you don't already have it:
+
+https://www.computerhope.com/issues/ch001927.htm#install
 
 ## Get Started
 ### Clone the project and checkout the 'clean_slate' branch
@@ -29,6 +39,10 @@ https://www.python.org/downloads/
     python3 -m venv .env
     source .env/bin/activate
     pip install -r requirements.txt
+
+#### If you are unable to create a virtual environment, make sure it is installed. 
+
+    pip install virtualenv
 
 ## Converting jpegs to png
     python3 jpg2png.py
