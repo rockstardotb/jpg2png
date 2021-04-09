@@ -23,7 +23,7 @@ Note, if you are using a Windows machine, you also need to download git if you d
 https://www.computerhope.com/issues/ch001927.htm#install
 
 ## Get Started
-### Clone the project and checkout the 'clean_slate' branch
+### Clone the project
 
     git clone https://github.com/rockstardotb/jpg2png.git
     cd jpg2png/
