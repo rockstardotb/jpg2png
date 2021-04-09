@@ -2,11 +2,11 @@
 To use this module, you must have python3 and several libraries that are used for image conversion (see requirements.txt)
 
 ## Prerequisites
-Make sure you have Python3 and pip installed on your computer. The easiest way to determine this is by running 'python3 --version' and 'pip --version'. If you get a response similar to
+Make sure you have Python3.9 or newer and pip installed on your computer. The easiest way to determine this is by running 'python3.9 --version' and 'pip --version'. If you get a response similar to
 
-Python 3.7.10
+Python 3.9.0
 
-pip 21.0.1 from /Users/rockstardotb/lib/python3.7/site-packages/pip (python 3.7)
+pip 21.0.1 from /Users/rockstardotb/lib/python3.9/site-packages/pip (python 3.9)
 
 then you are all set. Otherwise, download python3 using the following link:
 
@@ -33,11 +33,13 @@ https://www.computerhope.com/issues/ch001927.htm#install
     cd env
     Scripts\activate.bat
     cd ../
+    pip install --upgrade pip
     pip install -r requirements.txt
 
 #### On Mac/Linux
-    python3 -m venv .env
+    python3.9 -m venv .env
     source .env/bin/activate
+    pip install --upgrade pip
     pip install -r requirements.txt
 
 #### If you are unable to create a virtual environment, make sure it is installed. 
@@ -45,8 +47,8 @@ https://www.computerhope.com/issues/ch001927.htm#install
     pip install virtualenv
 
 ## Converting jpegs to png
-    python3 jpg2png.py
-    Note, this will convert any jpegs in the same directory as jpg2png.py to pngformat. If the image files are in another directory, specify that directory using the '--dir' argument. E.g. 'python3 jpg2png.py --dir /path/to/directory'
+    python jpg2png.py
+    Note, this will convert any jpegs in the same directory as jpg2png.py to pngformat. If the image files are in another directory, specify that directory using the '--dir' argument. E.g. 'python jpg2png.py --dir /path/to/directory'
 
 ## Deactivate the environment
     deactivate
