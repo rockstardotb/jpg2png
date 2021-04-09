@@ -1,6 +1,8 @@
 # jpg2png
 To use this module, you must have python3 and several libraries that are used for image conversion (see requirements.txt)
 
+Note, all commands are run either in the Terminal on Mac/Linux, or the Command Prompt on Windows.
+
 ## Prerequisites
 Make sure you have Python3.9 or newer and pip installed on your computer. The easiest way to determine this is by running 'python3.9 --version' and 'pip --version'. If you get a response similar to
 
@@ -48,7 +50,8 @@ https://www.computerhope.com/issues/ch001927.htm#install
 
 ## Converting jpegs to png
     python jpg2png.py
-    Note, this will convert any jpegs in the same directory as jpg2png.py to pngformat. If the image files are in another directory, specify that directory using the '--dir' argument. E.g. 'python jpg2png.py --dir /path/to/directory'
+
+Note, this will convert any jpegs in the same directory as jpg2png.py to png format. If the image files are in another directory, specify that directory using the '--dir' argument. E.g. 'python jpg2png.py --dir /path/to/directory'
 
 ## Deactivate the environment
     deactivate
@@ -61,3 +64,5 @@ https://www.computerhope.com/issues/ch001927.htm#install
 
 #### On Mac/Linux
     source .env/bin/activate
+    
+Note, you will have to reactivate your environment before using the jpg2png module if you deactivate your environment or close the terminal or command prompt window where your environment was last activated.
