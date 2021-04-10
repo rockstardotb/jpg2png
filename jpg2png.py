@@ -71,7 +71,7 @@ if __name__=='__main__':
             if filename.endswith(".jpg"):
                 try:
                     res = decode_segmap(os.path.join(dir,filename))
-                    cv2.imwrite('{}.png'.format(filename), res)
+                    cv2.imwrite('{}.png'.format(os.path.join(dir,filename)), res)
                     print("{} --> {}.png".format(filename, filename))
                 except Exception as e:
                     print("Failed to convert {}: {}".format(filename, str(e)))
